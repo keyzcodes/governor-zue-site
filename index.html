@@ -1,0 +1,688 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#000000" />
+    <title>Governor Zue Worldwide | Official Music Portfolio</title>
+      <meta name="description" content="Official site of Nigerian artist Governor Zue. Stream Oh Maria and Faya, watch the latest video, browse the catalog, and book the artist." />
+  <link rel="canonical" href="https://YOUR-SITE-URL/" />
+
+  <!-- Link preview (WhatsApp, Facebook, iMessage, LinkedIn) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Governor Zue Worldwide" />
+  <meta property="og:title" content="Governor Zue Worldwide | Official Site" />
+  <meta property="og:description" content="Stream the latest music, watch the new video and book Governor Zue." />
+  <meta property="og:url" content="https://YOUR-SITE-URL/" />
+  <meta property="og:image" content="https://YOUR-SITE-URL/images/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Governor Zue in white lace attire beside his car" />
+
+  <!-- Link preview (X / Twitter) -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Governor Zue Worldwide | Official Site" />
+  <meta name="twitter:description" content="Stream the latest music, watch the new video and book Governor Zue." />
+  <meta name="twitter:image" content="https://YOUR-SITE-URL/images/og-image.jpg" />
+
+    <!-- Fonts (Montserrat for headings, Inter for body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://www.youtube.com" />
+    <link rel="preconnect" href="https://i.ytimg.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ============ NAV ============ -->
+    <header class="site-nav" id="siteNav">
+      <a href="#home" class="nav-logo" aria-label="Governor Zue home"
+        >GZ<span>.</span></a
+      >
+
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+        aria-controls="navMenu"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- index.html -->
+      <!-- index.html -->
+      <nav class="nav-menu" id="navMenu" aria-label="Main navigation">
+        <div class="nav-top">
+          <span class="nav-brand">Governor Zue<span>Worldwide</span></span>
+          <button
+            class="nav-close"
+            id="navClose"
+            type="button"
+            aria-label="Close menu"
+          >
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+              <path
+                d="M6 6l12 12M18 6L6 18"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                fill="none"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#latest-video">Latest Video</a></li>
+          <li><a href="#catalog">Catalog</a></li>
+          <li><a href="#biography">Manifesto</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#portal">Booking</a></li>
+        </ul>
+
+        <div class="nav-foot">
+          <a href="#portal" class="btn-gold nav-cta">Book Governor Zue</a>
+          <p class="nav-foot-label">Stream now</p>
+          <ul class="nav-socials">
+            <li>
+              <a
+                href="https://audiomack.com/governor-zue-1"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Audiomack</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.boomplay.com/artists/EQLoH_STiMbOVil_qHWTFUFv"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Boomplay</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://music.apple.com/us/artist/governor-zue/1711384252"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Apple Music</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://open.spotify.com/artist/3fXCnUVAwLk0zP3RvUvNzm"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Spotify</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.tiktok.com/@governorzue"
+                target="_blank"
+                rel="noopener noreferrer"
+                >TikTok</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="nav-backdrop" id="navBackdrop"></div>
+    </header>
+
+    <main>
+      <!-- ============ 1. VIDEO HERO ============ -->
+      <section class="hero reveal" id="home">
+        <!-- Fallback image shows while video loads or if it is blocked -->
+        <div class="hero-media">
+          <img
+            class="hero-fallback"
+            src="images/hero-fallback.jpg"
+            alt="Governor Zue in white lace attire leaning on a black car"
+            fetchpriority="high"
+          />
+          <!-- Replace YOUR_HERO_VIDEO_ID (appears twice) with a YouTube video ID -->
+          <iframe
+            class="hero-video"
+            id="heroVideo"
+            src="https://www.youtube.com/embed/guFNSQudTdM?autoplay=1&mute=1&loop=1&playlist=guFNSQudTdM&controls=0&modestbranding=1&rel=0&playsinline=1&disablekb=1"
+            title="Governor Zue background video"
+            allow="autoplay; encrypted-media; picture-in-picture"
+            tabindex="-1"
+            aria-hidden="true"
+          ></iframe>
+          <div class="hero-overlay"></div>
+        </div>
+
+        <div class="hero-content">
+          <p class="eyebrow">New Music Out Now</p>
+          <h1 class="hero-title">
+            <span>GOVERNOR</span>
+            <span>ZUE</span>
+            <span class="gold-text">WORLDWIDE</span>
+          </h1>
+
+          <ul class="badges" aria-label="Stream on">
+            <li>
+              <a
+                class="badge"
+                href="https://audiomack.com/governor-zue-1"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Audiomack</a
+              >
+            </li>
+            <li>
+              <a
+                class="badge"
+                href="https://www.boomplay.com/artists/EQLoH_STiMbOVil_qHWTFUFv"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Boomplay</a
+              >
+            </li>
+            <li>
+              <a
+                class="badge"
+                href="https://music.apple.com/us/artist/governor-zue/1711384252"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Apple Music</a
+              >
+            </li>
+            <li>
+              <a
+                class="badge"
+                href="https://open.spotify.com/artist/3fXCnUVAwLk0zP3RvUvNzm"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Spotify</a
+              >
+            </li>
+          </ul>
+
+          <a
+            href="#latest-video"
+            class="scroll-cue"
+            aria-label="Scroll to latest video"
+          >
+            <span>Scroll</span>
+            <i></i>
+          </a>
+        </div>
+      </section>
+
+      <!-- ============ 3. VIDEO HUB ============ -->
+      <section class="section reveal" id="latest-video">
+        <div class="container">
+          <p class="eyebrow">Official Music Video</p>
+          <h2 class="section-title">LATEST<br />VIDEO</h2>
+          <p class="body-copy">
+            "Faya" featuring Lady Pesh. Hit play, turn the volume up, and watch
+            it in full screen.
+          </p>
+
+          <!-- Vertical 9:16 wrapper. Replace YOUR_FAYA_VIDEO_ID with the official video ID -->
+          <div class="video-wrap">
+            <iframe
+              src="https://www.youtube.com/embed/guFNSQudTdM?rel=0&modestbranding=1&playsinline=1"
+              title="Governor Zue - Faya (feat. Lady Pesh) official music video"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allow="
+                accelerometer;
+                autoplay;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                fullscreen;
+              "
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <p class="video-credit">
+            <strong>Faya</strong> (feat. Lady Pesh) · 2025
+          </p>
+        </div>
+      </section>
+
+      <!-- ============ 4. CATALOG ============ -->
+      <section class="section reveal" id="catalog">
+        <div class="container">
+          <p class="eyebrow">Discography</p>
+          <h2 class="section-title">THE<br />CATALOG</h2>
+          <p class="body-copy">
+            Every release, in order. Tap a track to see where it lives.
+          </p>
+
+          <ul class="catalog-grid">
+            <li class="track-card">
+              <a
+                href="https://audiomack.com/governor-zue-1"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="track-link"
+                aria-label="Listen to Oh Maria (2026)"
+              >
+                <div class="track-art" data-initial="OM"></div>
+                <div class="track-info">
+                  <span class="track-year">2026</span>
+                  <h3 class="track-name">OH MARIA</h3>
+                  <span class="track-tag">Latest Single</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="track-card">
+              <a
+                href="https://audiomack.com/governor-zue-1/song/faya"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="track-link"
+                aria-label="Listen to Faya (2025)"
+              >
+                <div class="track-art" data-initial="F"></div>
+                <div class="track-info">
+                  <span class="track-year">2025</span>
+                  <h3 class="track-name">FAYA</h3>
+                  <span class="track-tag">feat. Lady Pesh</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="track-card">
+              <a
+                href="https://audiomack.com/governor-zue-1"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="track-link"
+                aria-label="Listen to Parte (2025)"
+              >
+                <div class="track-art" data-initial="P"></div>
+                <div class="track-info">
+                  <span class="track-year">2025</span>
+                  <h3 class="track-name">PARTE</h3>
+                  <span class="track-tag">Single</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="track-card">
+              <a
+                href="https://audiomack.com/governor-zue-1"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="track-link"
+                aria-label="Listen to One Dance (2024)"
+              >
+                <div class="track-art" data-initial="OD"></div>
+                <div class="track-info">
+                  <span class="track-year">2024</span>
+                  <h3 class="track-name">ONE DANCE</h3>
+                  <span class="track-tag">Single</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="track-card">
+              <a
+                href="https://audiomack.com/governor-zue-1"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="track-link"
+                aria-label="Listen to Polo (2023)"
+              >
+                <div class="track-art" data-initial="PL"></div>
+                <div class="track-info">
+                  <span class="track-year">2023</span>
+                  <h3 class="track-name">POLO</h3>
+                  <span class="track-tag">Single</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============ 5. BIOGRAPHY ============ -->
+      <section class="section reveal" id="biography">
+        <div class="container bio-layout">
+          <figure class="bio-photo">
+            <img
+              src="images/governor-zue-bio.jpg"
+              alt="Governor Zue in white lace attire looking over his shoulder"
+              loading="lazy"
+            />
+          </figure>
+
+          <div class="bio-text">
+            <p class="eyebrow">The Story</p>
+            <h2 class="section-title">THE<br />MANIFESTO</h2>
+
+            <p class="body-copy lead">
+              Born Usongo Jeremiah Sesugh, now known to the streets and the
+              stage as Governor Zue.
+            </p>
+            <!-- Edit this copy with his real story, hometown, influences, and milestones -->
+            <p class="body-copy">
+              Governor Zue is a Nigerian artist who turns everyday life into
+              music people can feel. Since 2023 he has built a catalog one
+              release at a time, from "Polo" to "One Dance," "Parte," "Faya,"
+              and his latest record, "Oh Maria."
+            </p>
+            <p class="body-copy">
+              His sound is grounded and relatable, with rhythm you move to and
+              words you remember. The mission is simple: stay consistent, stay
+              real, and take the movement worldwide.
+            </p>
+
+            <ul class="stats">
+              <li><strong>5</strong><span>Releases</span></li>
+              <li><strong>2023</strong><span>First Drop</span></li>
+              <li><strong>WW</strong><span>Mindset</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- ============ GALLERY ============ -->
+      <section class="section reveal" id="gallery">
+        <div class="container">
+          <p class="eyebrow">Visuals</p>
+          <h2 class="section-title">THE<br />GALLERY</h2>
+          <p class="body-copy">
+            Swipe through. Tap any photo to see it full screen.
+          </p>
+        </div>
+
+        <div
+          class="gallery-track"
+          tabindex="0"
+          aria-label="Photo gallery, scroll sideways"
+        >
+          <figure class="gallery-item">
+            <img
+              src="images/gallery-1.jpg"
+              alt="Governor Zue seated and smiling"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="images/gallery-2.jpg"
+              alt="Governor Zue laughing beside a black car"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="images/gallery-3.jpg"
+              alt="Governor Zue behind the wheel"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="images/gallery-4.jpg"
+              alt="Governor Zue at the car door"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="images/gallery-5.jpg"
+              alt="Governor Zue leaning on his car"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="images/gallery-6.jpg"
+              alt="Governor Zue standing by a palm tree"
+              loading="lazy"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <dialog class="lightbox" id="lightbox" aria-label="Enlarged photo">
+        <img id="lightboxImg" src="" alt="" />
+        <button
+          class="lightbox-close"
+          id="lightboxClose"
+          aria-label="Close photo"
+        >
+          &times;
+        </button>
+      </dialog>
+
+      <!-- ============ 6. BOOKING & FAN PORTAL ============ -->
+      <section class="section reveal" id="portal">
+        <div class="container">
+          <p class="eyebrow">Get In Touch</p>
+          <h2 class="section-title">BOOKING &amp;<br />FAN PORTAL</h2>
+
+          <div class="portal-grid">
+            <!-- Booking form -->
+            <form class="form-card" id="bookingForm" novalidate>
+              <h3 class="form-title">BOOK GOVERNOR ZUE</h3>
+              <p class="body-copy small">
+                Shows, features, brand deals and events.
+              </p>
+
+              <div class="field">
+                <label for="bk-name">Full name</label>
+                <input
+                  type="text"
+                  id="bk-name"
+                  name="name"
+                  placeholder="Your name"
+                  autocomplete="name"
+                  required
+                />
+                <span class="error-msg" aria-live="polite"></span>
+              </div>
+
+              <div class="field">
+                <label for="bk-email">Email</label>
+                <input
+                  type="email"
+                  id="bk-email"
+                  name="email"
+                  placeholder="you@email.com"
+                  autocomplete="email"
+                  inputmode="email"
+                  required
+                />
+                <span class="error-msg" aria-live="polite"></span>
+              </div>
+
+              <div class="field">
+                <label for="bk-type">Inquiry type</label>
+                <select id="bk-type" name="type" required>
+                  <option value="" disabled selected>Select one</option>
+                  <option>Live Show / Concert</option>
+                  <option>Feature / Collaboration</option>
+                  <option>Brand Partnership</option>
+                  <option>Private Event</option>
+                  <option>Press / Interview</option>
+                </select>
+                <span class="error-msg" aria-live="polite"></span>
+              </div>
+
+              <div class="field">
+                <label for="bk-date">Event date (optional)</label>
+                <input type="date" id="bk-date" name="date" />
+              </div>
+
+              <div class="field">
+                <label for="bk-message">Details</label>
+                <textarea
+                  id="bk-message"
+                  name="message"
+                  rows="4"
+                  placeholder="Tell us about the event, location and budget"
+                  required
+                ></textarea>
+                <span class="error-msg" aria-live="polite"></span>
+              </div>
+
+              <button type="submit" class="btn-gold">Send Inquiry</button>
+              <p
+                class="form-status"
+                id="bookingStatus"
+                role="status"
+                aria-live="polite"
+              ></p>
+            </form>
+
+            <!-- Fan registry -->
+            <form class="form-card fan-card" id="fanForm" novalidate>
+              <h3 class="form-title">JOIN THE FAN REGISTRY</h3>
+              <p class="body-copy small">
+                Get early access to new drops, videos and tour dates.
+              </p>
+
+              <div class="field">
+                <label for="fan-email">Email</label>
+                <input
+                  type="email"
+                  id="fan-email"
+                  name="fanEmail"
+                  placeholder="you@email.com"
+                  autocomplete="email"
+                  inputmode="email"
+                  required
+                />
+                <span class="error-msg" aria-live="polite"></span>
+              </div>
+
+              <button type="submit" class="btn-gold">Join Now</button>
+              <p
+                class="form-status"
+                id="fanStatus"
+                role="status"
+                aria-live="polite"
+              ></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="site-footer">
+      <p class="footer-logo">GOVERNOR ZUE <span>WORLDWIDE</span></p>
+      <ul class="footer-links">
+        <li>
+          <a
+            href="https://audiomack.com/governor-zue-1"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Audiomack</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.boomplay.com/artists/EQLoH_STiMbOVil_qHWTFUFv"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Boomplay</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://music.apple.com/us/artist/governor-zue/1711384252"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Apple Music</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://open.spotify.com/artist/3fXCnUVAwLk0zP3RvUvNzm"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Spotify</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.tiktok.com/@governorzue"
+            target="_blank"
+            rel="noopener noreferrer"
+            >TikTok</a
+          >
+        </li>
+      </ul>
+      <p class="copyright">
+        &copy; <span id="year">2026</span> Governor Zue. All rights reserved.
+      </p>
+    </footer>
+
+    <!-- ============ 2. FLOATING AUDIO BAR ============ -->
+    <aside class="audio-bar" id="audioBar" aria-label="Music player">
+      <div class="vinyl" id="vinyl" aria-hidden="true">
+        <div class="vinyl-label"></div>
+      </div>
+
+      <div class="audio-meta">
+        <span class="audio-status" id="audioStatus">Tap to play</span>
+        <strong class="audio-title" id="audioTitle">Faya</strong>
+      </div>
+
+      <button
+        class="audio-switch"
+        id="audioSwitch"
+        aria-label="Switch track"
+        title="Switch track"
+      >
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+          <path fill="currentColor" d="M6 6h2v12H6zm3.5 6 8.5 6V6z" />
+        </svg>
+      </button>
+
+      <button
+        class="audio-play"
+        id="audioPlay"
+        aria-label="Play music"
+        aria-pressed="false"
+      >
+        <svg
+          class="icon-play"
+          viewBox="0 0 24 24"
+          width="26"
+          height="26"
+          aria-hidden="true"
+        >
+          <path fill="currentColor" d="M8 5v14l11-7z" />
+        </svg>
+        <svg
+          class="icon-pause"
+          viewBox="0 0 24 24"
+          width="26"
+          height="26"
+          aria-hidden="true"
+        >
+          <path fill="currentColor" d="M6 5h4v14H6zm8 0h4v14h-4z" />
+        </svg>
+      </button>
+
+      <!-- Add real files to /audio. Keep preload="none" so nothing downloads until tapped -->
+          <!-- Hidden YouTube player that supplies the audio -->
+    <div class="yt-audio" aria-hidden="true"><div id="ytAudio"></div></div>
+    </aside>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
